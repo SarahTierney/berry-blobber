@@ -36,7 +36,7 @@ var redCurrant = {
 
 // Write your function here, name it `writeBerries`
 
-var writeBerries = function (berries) {
+var writeBerries = function (berries){
   document.write('<h1>Berries</h1>');
 
   bugs.forEach(function (berry) {
@@ -52,34 +52,15 @@ var writeBerries = function (berries) {
     document.write('<dt>Energy</dt>');
     document.write('<dd>' + berry.energy + 'kJ' + '</dd>');
 
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + berry.carbs + 'g' + '</dd>');
 
-    document.write('<dd><i>' + berry.carbs[0] + ' g</i></dd>');
-    document.write('<dd><i>' + berry.protein[0] + ' g</i></dd>');
-    document.write('<dt>Size</dt>');
-    document.write('<dt>Eats</dt>');
-
-    document.write('<dd>');
-
-
-
-    if (bug.food.eatsDung) {
-      document.write('Dung');
-    }
-
-    if (bug.food.eatsPlants) {
-      document.write('Plants');
-    }
-
-    document.write('</dd>');
-
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein + 'g' + '</dd>');
     document.write('</dl>');
-    document.write('</li>');
   });
-
-  document.write('</ol>');
 };
 
-writeInsects(insects);
 
 
 
