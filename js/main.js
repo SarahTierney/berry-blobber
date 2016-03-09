@@ -49,8 +49,10 @@ var writeBerries = function (berries) {
       document.write('<dd>No.</dd>');
     }
 
-    document.write('<dd><i>' + berry.onShrub + '</i></dd>');
-    document.write('<dd>' + berry.energy[0] + ' kj</dd>');
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy + 'kJ' + '</dd>');
+
+
     document.write('<dd><i>' + berry.carbs[0] + ' g</i></dd>');
     document.write('<dd><i>' + berry.protein[0] + ' g</i></dd>');
     document.write('<dt>Size</dt>');
