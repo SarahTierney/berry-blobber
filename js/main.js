@@ -48,13 +48,13 @@ var writeBerries = function (berries) {
     }
 
     document.write('<dt>Energy</dt>');
-    document.write('<dd>' + berry.energy + '</dd>');
+    document.write('<dd>' + berry.energy + 'kj</dd>');
 
     document.write('<dt>Carbohydrates</dt>');
-    document.write('<dd>' + berry.carbs + '</dd>');
+    document.write('<dd>' + berry.carbs + 'g</dd>');
 
     document.write('<dt>Protein</dt>');
-    document.write('<dd>' + berry.protein + '</dd>');
+    document.write('<dd>' + berry.protein + 'g</dd>');
 
     document.write('</dl>');
   });
